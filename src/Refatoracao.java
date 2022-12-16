@@ -1,7 +1,7 @@
 
 public class Refatoracao {
 
-	public void registroUsuario(String nome) {
+	public void registroUsuario(String nome)
 		throws UsuarioJaRegistradoException, UsuarioComNomeVazioException, UsuarioInexistenteException {
 			if (nome != null) {
 				if(!nome.isEmpty()) {
@@ -16,4 +16,4 @@ public class Refatoracao {
 				throw new UsuarioInexistenteException("--->Não pode registrar usuário inexistente!");
 		}
 	}
-}
+
